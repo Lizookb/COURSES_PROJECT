@@ -1,0 +1,28 @@
+<h1>Курсы</h1>
+{{#if courses.length}}
+<div class="courses">
+  {{#each courses}}
+  <div class="col s6 z-depth-4 #ff8a65 #ef9a9a red lighten-3">
+    <div class="card p5">
+      <span class="card-title #ff8a65">{{title}}</span>
+      <div class="card-image">
+        <img alt='{{title}}' src='{{img}}'>
+      </div>
+      <div class="card-content #ef9a9a red lighten-3">
+        <p class='price '>{{price}}</p>
+      </div>
+      <div class="card-action #ffcdd2 red lighten-4 ">
+        <a href="/corses/{{id}}" class='#e57373 red lighten-2 '> Link</a>
+        <a href="/corses/{{id}}/edit?allow=true" class="#e57373 red lighten-2"> Edit course </a>
+        <form action="/card/add" method="POST">
+          <input type="hidden" name='id' value='{{id}}'>
+          <button class='btn btn-primary btn-pay'>Купить</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  {{/each}}
+  {{else }}
+  <p>" Курсов нет"</p>
+  {{/if}}

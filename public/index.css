@@ -1,0 +1,104 @@
+.nav-wrapper {
+  padding: 0 2rem;
+}
+body {
+ background-color: #FAF0E6;
+}
+.materialize-textarea {
+color:#9e9e9e;
+font-size: 16px;
+
+}
+.card .card-content {
+  padding: 10px;
+}
+.card-title {
+  font-size: 20px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 5px;
+}
+.row {
+  column-gap: 15px
+}
+.card{
+  text-align: center;
+}
+.name {
+  font-size:18px;
+  letter-spacing: 5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin:0 auto;
+  display: block;
+  max-width:250px;
+  overflow: hidden;
+  text-overflow: ellipsis;  
+  text-align: center;
+}
+.card-content {
+  text-align: center;
+}
+
+.card-image{
+  text-align: center;
+}
+
+.card .card-content p {
+  margin: 0 auto;
+}
+
+.card form{
+  flex-grow: 1;
+  margin-top: 5px;
+}
+
+.price {
+  font-size:18px;
+  letter-spacing: 5px;
+  /*font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
+  text-align: center;
+}
+
+.btn-pay{
+  display: block;
+  width: 100%;
+  padding: 5px 0;
+  height: auto;
+}
+
+.courses {
+  gap: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating){
+  padding: 5px;
+}
+
+.card .card-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card .card-image {
+  padding: 15px;
+}
+.card .card-action {
+  border-top: 1px solid rgba(160,160,160,0.2);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+
+.card-action a{
+  flex-basis: 49%;
+  margin-right: 0!important;
+}
+
+.course-full .card-image img{
+  height: 300px;
+  object-fit: cover;
+}
